@@ -10,8 +10,8 @@ int count(char str1[],char str2[],int len1,int len2){
         flag[i]=0;
     }
     for(int i=0;i<len1;i++){
-        if(flag[i]==0){
             for(int j=0;j<len2;j++){
+                if(flag[j]==0){
                 if(str1[i]==str2[j]){
                     flag[j]=1;
                     cnt++;
